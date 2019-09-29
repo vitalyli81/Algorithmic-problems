@@ -1,5 +1,6 @@
 import Grid from '../dataStructures/Grid/Grid';
-import { gridBfs, getGridShortestPath } from '../algorithms/Graphs/Bfs/GridBfs';
+import { gridBfs } from '../algorithms/Graphs/Bfs/GridBfs';
+import { getGridShortestPath } from '../algorithms/Graphs/utils';
 
 describe('grid bfs test', () => {
   const graph = new Grid(10, 10);

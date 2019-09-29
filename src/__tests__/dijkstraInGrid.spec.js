@@ -1,8 +1,6 @@
 import Grid from '../dataStructures/Grid/Grid';
-import {
-  dijkstra,
-  getGridShortestPath
-} from '../algorithms/Graphs/Dijkstra/dijkstraInGrid';
+import { dijkstra } from '../algorithms/Graphs/Dijkstra/dijkstraInGrid';
+import { getGridShortestPath } from '../algorithms/Graphs/utils';
 
 describe('grid bfs test', () => {
   const graph = new Grid(15, 15);

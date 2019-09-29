@@ -1,8 +1,6 @@
 import Grid from '../dataStructures/Grid/Grid';
-import {
-  aStar,
-  getGridShortestPath
-} from '../algorithms/Graphs/A*/aStarInGrid';
+import { aStar } from '../algorithms/Graphs/A*/aStarInGrid';
+import { getGridShortestPath } from '../algorithms/Graphs/utils';
 
 describe('grid bfs test', () => {
   const graph = new Grid(15, 15);
