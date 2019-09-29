@@ -1,16 +1,19 @@
+import Queue from '../../../dataStructures/Queue/Queue';
+
 export const bfs = (graph, source, goal) => {
-  const frontier = [source];
+  const frontier = new Queue();
+  frontier.enqueue(source);
   const cameFrom = { [source]: null };
   const distance = { [source]: 0 };
 
   while (frontier.length) {
-    const currentNode = frontier.shift(); // regular array used as a queue: TODO: to build efficient queue
+    const currentNode = frontier.dequeue();
 
     if (currentNode === goal) break;
 
     graph.getNeighbors(currentNode).forEach(nextNode => {
       if (!cameFrom[nextNode]) {
-        frontier.push(nextNode);
+        frontier.enqueue(nextNode);
         cameFrom[nextNode] = currentNode;
         distance[nextNode] = distance[currentNode] + 1;
       }
