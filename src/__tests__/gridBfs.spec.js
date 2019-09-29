@@ -23,7 +23,7 @@ describe('grid bfs test', () => {
       { row: 3, col: 2 },
       { row: 3, col: 3 }
     ];
-    console.log('!!! shortestPath ', shortestPath);
+
     expect(shortestPath).toEqual(expectedPath);
   });
 });

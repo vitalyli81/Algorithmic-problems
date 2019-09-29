@@ -3,6 +3,7 @@ export class Grid {
     this.rows = rows;
     this.cols = cols;
     this.walls = {};
+    this.weights = {};
   }
 
   isInBound({ row, col }) {
@@ -31,6 +32,14 @@ export class Grid {
     });
 
     return results;
+  }
+
+  getWeight(node) {
+    return this.weights[JSON.stringify(node)] || 1;
+  }
+
+  addWeight(node, value = 1) {
+    this.weights[JSON.stringify(node)] = value;
   }
 
   addWall(node) {
