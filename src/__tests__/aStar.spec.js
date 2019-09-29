@@ -1,8 +1,8 @@
 import Grid from '../dataStructures/Grid/Grid';
 import {
-  dijkstra,
+  aStar,
   getGridShortestPath
-} from '../algorithms/Graphs/Dijkstra/dijkstraInGrid';
+} from '../algorithms/Graphs/A*/aStarInGrid';
 
 describe('grid bfs test', () => {
   const graph = new Grid(15, 15);
@@ -42,7 +42,7 @@ describe('grid bfs test', () => {
   graph.addWeight({ row: 2, col: 3 }, 5);
   graph.addWeight({ row: 0, col: 4 }, 5);
 
-  const { cameFrom, distance } = dijkstra(graph, source, goal);
+  const { cameFrom, distance } = aStar(graph, source, goal);
 
   const shortestPath = getGridShortestPath(cameFrom, source, goal);
 
@@ -50,30 +50,30 @@ describe('grid bfs test', () => {
     const expectedPath = [
       { row: 12, col: 0 },
       { row: 12, col: 1 },
-      { row: 13, col: 1 },
-      { row: 13, col: 2 },
-      { row: 13, col: 3 },
-      { row: 13, col: 4 },
-      { row: 13, col: 5 },
-      { row: 13, col: 6 },
-      { row: 13, col: 7 },
-      { row: 13, col: 8 },
-      { row: 13, col: 9 },
-      { row: 13, col: 10 },
-      { row: 13, col: 11 },
-      { row: 13, col: 12 },
-      { row: 13, col: 13 },
-      { row: 12, col: 13 },
-      { row: 11, col: 13 },
-      { row: 10, col: 13 },
-      { row: 9, col: 13 },
-      { row: 8, col: 13 },
-      { row: 7, col: 13 },
-      { row: 6, col: 13 },
-      { row: 5, col: 13 },
-      { row: 4, col: 13 },
-      { row: 3, col: 13 },
-      { row: 3, col: 14 },
+      { row: 11, col: 1 },
+      { row: 11, col: 2 },
+      { row: 11, col: 3 },
+      { row: 11, col: 4 },
+      { row: 10, col: 4 },
+      { row: 9, col: 4 },
+      { row: 8, col: 4 },
+      { row: 7, col: 4 },
+      { row: 6, col: 4 },
+      { row: 5, col: 4 },
+      { row: 4, col: 4 },
+      { row: 3, col: 4 },
+      { row: 2, col: 4 },
+      { row: 1, col: 4 },
+      { row: 1, col: 5 },
+      { row: 1, col: 6 },
+      { row: 1, col: 7 },
+      { row: 1, col: 8 },
+      { row: 1, col: 9 },
+      { row: 1, col: 10 },
+      { row: 1, col: 11 },
+      { row: 1, col: 12 },
+      { row: 1, col: 13 },
+      { row: 1, col: 14 },
       { row: 2, col: 14 }
     ];
 
