@@ -17,7 +17,9 @@ export const aStar = (graph, source, goal) => {
       const newDistance = distance[currentNodeStr] + graph.getWeight(nextNode);
 
       if (!(nextNodeStr in cameFrom) || newDistance < distance[nextNodeStr]) {
-        frontier.add(nextNode, newDistance + gridHeuristic(goal, nextNode));
+        const priority = newDistance + gridHeuristic(goal, nextNode);
+
+        frontier.add(nextNode, priority);
         cameFrom[nextNodeStr] = currentNode;
         distance[nextNodeStr] = newDistance;
       }
@@ -30,9 +32,9 @@ export const aStar = (graph, source, goal) => {
   };
 };
 
-const gridHeuristic = (from, to) => {
-  const { row: row1, col: col1 } = from;
-  const { row: row2, col: col2 } = to;
+const gridHeuristic = (a, b) => {
+  const { row: row1, col: col1 } = a;
+  const { row: row2, col: col2 } = b;
 
   return Math.abs(row1 - row2) + Math.abs(col1 - col2);
 };
