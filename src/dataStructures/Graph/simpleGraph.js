@@ -6,6 +6,8 @@ export class SimpleGraph {
   getNeighbors(vertex) {
     return this.edges[vertex] || [];
   }
+
+  // TODO add rest of the methods
 }
 
 export default SimpleGraph;
