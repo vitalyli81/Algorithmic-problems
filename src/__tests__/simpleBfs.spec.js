@@ -1,8 +1,9 @@
-import simpleGraph from '../dataStructures/Graph/simpleGraph';
-import { bfs, getShortestPath } from '../algorithms/Graphs/Bfs/simpleBfs';
+import SimpleGraph from '../dataStructures/Graph/SimpleGraph';
+import Grid from '../dataStructures/Grid/Grid';
+import { bfs, getShortestPath } from '../algorithms/Graphs/Bfs/Bfs';
 
 describe('simpleBfs test', () => {
-  const graph = new simpleGraph();
+  const graph = new SimpleGraph();
   graph.edges = {
     A: ['B'],
     B: ['A', 'C', 'D'],

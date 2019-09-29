@@ -1,10 +1,12 @@
-export const bfs = (graph, source) => {
+export const bfs = (graph, source, goal) => {
   const frontier = [source];
   const cameFrom = { [source]: null };
   const distance = { [source]: 0 };
 
   while (frontier.length) {
     const currentNode = frontier.shift(); // regular array used as a queue: TODO: to build efficient queue
+
+    if (currentNode === goal) break;
 
     graph.getNeighbors(currentNode).forEach(nextNode => {
       if (!cameFrom[nextNode]) {
