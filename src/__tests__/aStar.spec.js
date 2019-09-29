@@ -7,7 +7,7 @@ import {
 describe('grid bfs test', () => {
   const graph = new Grid(15, 15);
   const source = { row: 12, col: 0 };
-  const goal = { row: 2, col: 14 };
+  const goal = { row: 1, col: 11 };
 
   graph.addWall({ row: 2, col: 5 });
   graph.addWall({ row: 2, col: 6 });
@@ -70,11 +70,7 @@ describe('grid bfs test', () => {
       { row: 1, col: 8 },
       { row: 1, col: 9 },
       { row: 1, col: 10 },
-      { row: 1, col: 11 },
-      { row: 1, col: 12 },
-      { row: 1, col: 13 },
-      { row: 1, col: 14 },
-      { row: 2, col: 14 }
+      { row: 1, col: 11 }
     ];
 
     console.log('!!! steps ', Object.keys(distance).length);

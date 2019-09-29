@@ -7,7 +7,7 @@ import {
 describe('grid bfs test', () => {
   const graph = new Grid(15, 15);
   const source = { row: 12, col: 0 };
-  const goal = { row: 2, col: 14 };
+  const goal = { row: 1, col: 11 };
 
   graph.addWall({ row: 2, col: 5 });
   graph.addWall({ row: 2, col: 6 });
@@ -49,32 +49,28 @@ describe('grid bfs test', () => {
   test('grid bfs traversal', () => {
     const expectedPath = [
       { row: 12, col: 0 },
-      { row: 12, col: 1 },
-      { row: 13, col: 1 },
-      { row: 13, col: 2 },
-      { row: 13, col: 3 },
-      { row: 13, col: 4 },
-      { row: 13, col: 5 },
-      { row: 13, col: 6 },
-      { row: 13, col: 7 },
-      { row: 13, col: 8 },
-      { row: 13, col: 9 },
-      { row: 13, col: 10 },
-      { row: 13, col: 11 },
-      { row: 13, col: 12 },
-      { row: 13, col: 13 },
-      { row: 12, col: 13 },
-      { row: 11, col: 13 },
-      { row: 10, col: 13 },
-      { row: 9, col: 13 },
-      { row: 8, col: 13 },
-      { row: 7, col: 13 },
-      { row: 6, col: 13 },
-      { row: 5, col: 13 },
-      { row: 4, col: 13 },
-      { row: 3, col: 13 },
-      { row: 3, col: 14 },
-      { row: 2, col: 14 }
+      { row: 11, col: 0 },
+      { row: 10, col: 0 },
+      { row: 9, col: 0 },
+      { row: 8, col: 0 },
+      { row: 7, col: 0 },
+      { row: 6, col: 0 },
+      { row: 6, col: 1 },
+      { row: 5, col: 1 },
+      { row: 5, col: 2 },
+      { row: 4, col: 2 },
+      { row: 4, col: 3 },
+      { row: 3, col: 3 },
+      { row: 3, col: 4 },
+      { row: 2, col: 4 },
+      { row: 1, col: 4 },
+      { row: 1, col: 5 },
+      { row: 1, col: 6 },
+      { row: 1, col: 7 },
+      { row: 1, col: 8 },
+      { row: 1, col: 9 },
+      { row: 1, col: 10 },
+      { row: 1, col: 11 }
     ];
 
     console.log('!!! steps ', Object.keys(distance).length);
