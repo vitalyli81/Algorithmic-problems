@@ -8,7 +8,7 @@ export const Bfs = (graph, source, goal) => {
 
     if (source === goal) return;
 
-    graph.getEdges(currentNode).forEach(nextNode => {
+    graph.getNeighbors(currentNode).forEach(nextNode => {
       if (!cameFrom[nextNode]) {
         frontier.push(nextNode);
         cameFrom[nextNode] = currentNode;

@@ -1,17 +1,11 @@
 export class SimpleGraph {
-  constructor(verticies) {
-    this.verticies = verticies;
+  constructor() {
+    this.edges = {};
   }
 
-  getEdges(vertex) {
-    return this.verticies[vertex] || [];
+  getNeighbors(vertex) {
+    return this.edges[vertex] || [];
   }
-
-  addVertex(vertex) {
-    this.verticies[vertex] = [];
-  }
-
-  addEdge(from, to) {}
 }
 
 export default SimpleGraph;
