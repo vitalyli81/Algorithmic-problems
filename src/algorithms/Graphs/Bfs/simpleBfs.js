@@ -1,4 +1,4 @@
-export const Bfs = (graph, source) => {
+export const bfs = (graph, source) => {
   const frontier = [source];
   const cameFrom = { [source]: null };
   const distance = { [source]: 0 };
@@ -21,4 +21,17 @@ export const Bfs = (graph, source) => {
   };
 };
 
-export default Bfs;
+export const getShortestPath = (cameFrom, start, goal) => {
+  let current = goal;
+  const path = [];
+
+  while (current !== start) {
+    path.push(current);
+    current = cameFrom[current];
+  }
+
+  path.push(start);
+  return path.reverse();
+};
+
+export default { bfs, getShortestPath };
