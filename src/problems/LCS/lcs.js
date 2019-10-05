@@ -3,13 +3,12 @@
  * @param {string} text2
  * @return {number}
  */
-var longestCommonSubsequence = function(text1, text2) {
+export const longestCommonSubsequence = (text1, text2) => {
   const len1 = text1.length + 1;
   const len2 = text2.length + 1;
   let maxLength = 0;
   const memoGrid = Array(len1);
 
-  // init grid
   for (let row = 0; row < len1; row++) {
     memoGrid[row] = Array(len2);
     memoGrid[row][0] = 0;
@@ -35,3 +34,5 @@ var longestCommonSubsequence = function(text1, text2) {
 
   return maxLength;
 };
+
+export default longestCommonSubsequence;
