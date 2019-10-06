@@ -34,8 +34,8 @@ If there is no common subsequence, return 0.
 
 ### Dynamic programing Bottom Up approach.
 
-> Time complexity is O(m _ n), m and n are lenght of strings.
-> Space complexity is (m _ n).
+> Time complexity is O(m x n), m and n are lenght of strings.
+> Space complexity is (m x n).
 
 ```js
 export const longestCommonSubsequence = (text1, text2) => {
