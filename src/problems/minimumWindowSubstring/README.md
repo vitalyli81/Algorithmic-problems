@@ -17,3 +17,7 @@ Given a string S and a string T, find the minimum window in S which will contain
 ### [Solution - Sliding window](minWindow.js)
 
 > Time - O(n + m), Space - O(m)
+
+### [Solution 2 - Sliding window](minWindow2.js)
+
+> Time - O(n + m), Space - O(m)
