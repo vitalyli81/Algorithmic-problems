@@ -26,7 +26,7 @@ export class MaxPriorityQueue {
     if (this.heapSize < 1) return;
 
     let parent = Math.floor(i / 2); // parent index
-    let index = i;
+    let index = ind;
 
     if (key < this.A[index]) return;
 

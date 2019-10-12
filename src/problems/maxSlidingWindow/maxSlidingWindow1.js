@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number[]}
  */
-const maxSlidingWindow = (nums, k) => {
+export const maxSlidingWindow = (nums, k) => {
   if (k === 1 || nums.length === 1) return nums;
   if (k === 0) return [];
 
@@ -20,3 +20,5 @@ const maxSlidingWindow = (nums, k) => {
 
   return results;
 };
+
+export default maxSlidingWindow;
