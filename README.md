@@ -15,3 +15,5 @@
 - [Jump Game 2](src/problems/jumpGame2/README.md)
 - [Longest Common Subsequence](src/problems/longestCommonSubsequence/README.md)
 - [LRU Cache](src/problems/LRUCache/README.md)
+- [Max Sliding Window](src/problems/maxSlidingWindow/README.md)
+- [First Missing Positive](src/problems/firstMissingPositive/README.md)
