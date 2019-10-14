@@ -17,3 +17,4 @@
 - [LRU Cache](src/problems/LRUCache/README.md)
 - [Max Sliding Window](src/problems/maxSlidingWindow/README.md)
 - [First Missing Positive](src/problems/firstMissingPositive/README.md)
+- [Decode String](src/problems/decodeString/README.md)
