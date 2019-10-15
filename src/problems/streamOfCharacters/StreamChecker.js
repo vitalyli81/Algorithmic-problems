@@ -1,4 +1,4 @@
-class StreamChecker {
+export class StreamChecker {
   constructor(words) {
     this.data = {};
     this.streams = [];
@@ -39,3 +39,5 @@ class StreamChecker {
     return false;
   }
 }
+
+export default StreamChecker;
