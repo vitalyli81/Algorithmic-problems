@@ -1,5 +1,5 @@
-import SimpleGraph from '../dataStructures/Graph/SimpleGraph';
-import { bfs, getShortestPath } from '../algorithms/Graphs/Bfs/simpleBfs';
+import SimpleGraph from '../../../../dataStructures/Graph/SimpleGraph';
+import { bfs, getShortestPath } from '../simpleBfs';
 
 describe('simpleBfs test', () => {
   const graph = new SimpleGraph();

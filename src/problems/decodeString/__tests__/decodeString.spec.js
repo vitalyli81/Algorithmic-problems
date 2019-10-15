@@ -1,4 +1,4 @@
-import decodeString from '../problems/decodeString/decodeString';
+import decodeString from '../decodeString';
 
 describe('decodeString test', () => {
   test('test decoding is correct', () => {

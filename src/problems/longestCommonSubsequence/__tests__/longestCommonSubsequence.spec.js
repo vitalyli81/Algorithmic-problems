@@ -1,4 +1,4 @@
-import lcs from '../problems/longestCommonSubsequence/lcs';
+import lcs from '../lcs';
 
 describe('Longest Common Subsequence', () => {
   test('lcs test case 1', () => {

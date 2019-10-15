@@ -1,6 +1,6 @@
-import jumpGame2Solution1 from '../problems/jumpGame2/solution1';
-import jumpGame2Solution2 from '../problems/jumpGame2/solution2';
-import jumpGame2Solution3 from '../problems/jumpGame2/solution3';
+import jumpGame2Solution1 from '../solution1';
+import jumpGame2Solution2 from '../solution2';
+import jumpGame2Solution3 from '../solution3';
 
 describe('Jump game 2', () => {
   test('test all solutions', () => {

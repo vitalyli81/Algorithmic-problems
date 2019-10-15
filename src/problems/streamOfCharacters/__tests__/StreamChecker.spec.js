@@ -1,4 +1,4 @@
-import StreamChecker from '../problems/streamOfCharacters/StreamChecker';
+import StreamChecker from '../StreamChecker';
 
 describe('StreamChecker test', () => {
   test('test object and method', () => {

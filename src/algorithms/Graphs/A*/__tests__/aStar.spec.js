@@ -1,6 +1,6 @@
-import Grid from '../dataStructures/Grid/Grid';
-import { dijkstra } from '../algorithms/Graphs/Dijkstra/dijkstraInGrid';
-import { getGridShortestPath } from '../algorithms/Graphs/utils';
+import Grid from '../../../../dataStructures/Grid/Grid';
+import { aStar } from '../aStarInGrid';
+import { getGridShortestPath } from '../../utils';
 
 describe('grid bfs test', () => {
   const graph = new Grid(15, 15);
@@ -40,25 +40,25 @@ describe('grid bfs test', () => {
   graph.addWeight({ row: 2, col: 3 }, 5);
   graph.addWeight({ row: 0, col: 4 }, 5);
 
-  const { cameFrom, distance } = dijkstra(graph, source, goal);
+  const { cameFrom, distance } = aStar(graph, source, goal);
 
   const shortestPath = getGridShortestPath(cameFrom, source, goal);
 
   test('grid bfs traversal', () => {
     const expectedPath = [
       { row: 12, col: 0 },
-      { row: 11, col: 0 },
-      { row: 10, col: 0 },
-      { row: 9, col: 0 },
-      { row: 8, col: 0 },
-      { row: 7, col: 0 },
-      { row: 6, col: 0 },
-      { row: 6, col: 1 },
-      { row: 5, col: 1 },
-      { row: 5, col: 2 },
-      { row: 4, col: 2 },
-      { row: 4, col: 3 },
-      { row: 3, col: 3 },
+      { row: 12, col: 1 },
+      { row: 11, col: 1 },
+      { row: 11, col: 2 },
+      { row: 11, col: 3 },
+      { row: 11, col: 4 },
+      { row: 10, col: 4 },
+      { row: 9, col: 4 },
+      { row: 8, col: 4 },
+      { row: 7, col: 4 },
+      { row: 6, col: 4 },
+      { row: 5, col: 4 },
+      { row: 4, col: 4 },
       { row: 3, col: 4 },
       { row: 2, col: 4 },
       { row: 1, col: 4 },
