@@ -3,4 +3,6 @@
  * @param {number} k
  * @return {number[]}
  */
-var maxSlidingWindow = function(nums, k) {};
+var maxSlidingWindow = function(nums, k) {
+  // TODO
+};
