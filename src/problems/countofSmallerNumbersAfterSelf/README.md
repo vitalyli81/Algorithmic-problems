@@ -13,3 +13,7 @@ To the right of 2 there is only 1 smaller element (1).
 To the right of 6 there is 1 smaller element (1).
 To the right of 1 there is 0 smaller element.
 ```
+
+### [Solution 1](countSmaller1.js)
+
+### [Solution 2](countSmaller2.js)

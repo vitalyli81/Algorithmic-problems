@@ -22,3 +22,9 @@ sumRegion(1, 2, 2, 4) -> 12
 You may assume that the matrix does not change.
 There are many calls to sumRegion function.
 You may assume that row1 ≤ row2 and col1 ≤ col2.
+
+### [Solution 1](NumMatrix1.js)
+
+### [Solution 2](NumMatrix2.js)
+
+### [Solution 3](NumMatrix3.js)
