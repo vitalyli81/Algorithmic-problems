@@ -25,3 +25,4 @@
 - [Count Complete Tree Nodes](src/problems/countCompleteTreeNodes/README.md)
 - [Delete Nodes And Return Forest](src/problems/deleteNodesAndReturnForest/README.md)
 - [Capacity To Ship Packages Within D Days](src/problems/capacityToShipPackagesWithinDDays/README.md)
+- [Network Delay Time](src/problems/networkDelayTime/README.md)
