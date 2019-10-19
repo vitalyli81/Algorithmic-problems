@@ -26,3 +26,6 @@
 - [Delete Nodes And Return Forest](src/problems/deleteNodesAndReturnForest/README.md)
 - [Capacity To Ship Packages Within D Days](src/problems/capacityToShipPackagesWithinDDays/README.md)
 - [Network Delay Time](src/problems/networkDelayTime/README.md)
+- [Count of Smaller Numbers After Self](src/problems/countofSmallerNumbersAfterSelf/README.md)
+- [Insert Interval](src/problems/insertInterval/README.md)
+- [Range Sum Query 2D - Immutable](src/problems/rangeSumQuery2DImmutable/README.md)
