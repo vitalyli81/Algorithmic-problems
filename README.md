@@ -29,3 +29,4 @@
 - [Count of Smaller Numbers After Self](src/problems/countofSmallerNumbersAfterSelf/README.md)
 - [Insert Interval](src/problems/insertInterval/README.md)
 - [Range Sum Query 2D - Immutable](src/problems/rangeSumQuery2DImmutable/README.md)
+- [Vertical Order Traversal of a Binary Tree](src/problems/VerticalOrderTraversalofaBinaryTree/README.md)
