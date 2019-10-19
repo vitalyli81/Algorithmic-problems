@@ -20,3 +20,8 @@
 - [Decode String](src/problems/decodeString/README.md)
 - [Stream of Characters](src/problems/streamOfCharacters/README.md)
 - [Implement Trie `(Prefix Tree)`](src/problems/Trie/README.md)
+- [Maximal Square](src/problems/maximalSquare/README.md)
+- [Increasing Triplet Subsequence](src/problems/increasingTripletSubsequence/README.md)
+- [Count Complete Tree Nodes](src/problems/countCompleteTreeNodes/README.md)
+- [Delete Nodes And Return Forest](src/problems/deleteNodesAndReturnForest/README.md)
+- [Capacity To Ship Packages Within D Days](src/problems/capacityToShipPackagesWithinDDays/README.md)
