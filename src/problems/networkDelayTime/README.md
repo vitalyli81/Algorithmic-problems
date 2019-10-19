@@ -12,3 +12,5 @@ Now, we send a signal from a certain node K. How long will it take for all nodes
 Input: times = [[2,1,1],[2,3,1],[3,4,1]], N = 4, K = 2
 Output: 2
 ```
+
+### [Solution](networkDelayTime.js)

@@ -45,3 +45,7 @@ Explanation:
 3rd day: 3
 4th day: 1, 1
 ```
+
+### [Solution 1](shipWithinDays.js)
+
+### [Solution 2](shipWithinDays2.js)

@@ -22,3 +22,5 @@ Example 2:
 Input: [5,4,3,2,1]
 Output: false
 ```
+
+## [Solution ](increasingTriplet.js)

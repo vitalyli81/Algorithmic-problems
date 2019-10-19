@@ -14,3 +14,7 @@ Input:
 
 Output: 4
 ```
+
+### [Solution 1](maximalSquare1.js)
+
+### [Solution 2](maximalSquare2.js)

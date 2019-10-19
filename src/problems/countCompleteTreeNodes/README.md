@@ -19,3 +19,9 @@ Input:
 
 Output: 6
 ```
+
+### [Solution 1](countNodes1.js)
+
+### [Solution 2](countNodes2.js)
+
+### [Solution 3](countNodes3.js)
