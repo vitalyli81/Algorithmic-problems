@@ -34,3 +34,4 @@
 - [Split Array Largest Sum](src/problems/splitArrayLargestSum/README.md)
 - [Read N Characters Given Read4 II - Call multiple times](src/problems/readNCharactersGivenRead4/README.md)
 - [Encode and Decode Strings](src/problems/encodeandDecodeStrings/README.md)
+- [Most Stones Removed with Same Row or Column](src/problems/mostStonesRemovedWithSameRowOrColumn/README.md)
