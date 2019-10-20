@@ -27,10 +27,9 @@ var solution = function(read4) {
         read4(tempBuf);
       }
       if (tempBuf.length === 0) {
-        isEndOfFile = true;
         break;
       }
-      while (buf.length < n && tempBuf.length > 0) {
+      if (tempBuf.length > 0) {
         buf.push(tempBuf.shift());
       }
     }
