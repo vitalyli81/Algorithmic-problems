@@ -33,3 +33,4 @@
 - [Longest Increasing Path in a Matrix](src/problems/longestIncreasingPathinaMatrix/README.md)
 - [Split Array Largest Sum](src/problems/splitArrayLargestSum/README.md)
 - [Read N Characters Given Read4 II - Call multiple times](src/problems/readNCharactersGivenRead4/README.md)
+- [Encode and Decode Strings](src/problems/encodeandDecodeStrings/README.md)
