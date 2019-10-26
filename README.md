@@ -36,3 +36,8 @@
 - [Encode and Decode Strings](src/problems/encodeandDecodeStrings/README.md)
 - [Most Stones Removed with Same Row or Column](src/problems/mostStonesRemovedWithSameRowOrColumn/README.md)
 - [Missing Ranges](src/problems/missingRanges/README.md)
+- [Flip Equivalent Binary Trees](src/problems/flipEquivalentBinaryTrees/README.md)
+- [Minimum Area Rectangle](src/problems/minimumAreaRectangle/README.md)
+- [Maximal Rectangle](src/problems/maximalRectangle/README.md)
+- [Largest Rectangle in Histogram](src/problems/largestRectangleinHistogram/README.md)
+- [Strobogrammatic Number II](src/problems/strobogrammaticNumberII/README.md)
