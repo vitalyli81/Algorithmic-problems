@@ -42,28 +42,28 @@ var cleanRoom = function(robot) {
 
 function cleanCell(robot, row, col, visited) {
   const key = `${row}:${col}`;
-  if (key in visited) return;
+  if (visited[key]) return;
 
   robot.clean();
-  visited[key] = 1;
+  visited[key] = true;
 
   if (moveUp(robot)) {
-    cleanCell(robot, row + 1, col, visited);
+    cleanCell(robot, row - 1, col, visited);
     moveDown(robot);
   }
 
   if (moveDown(robot)) {
-    cleanCell(robot, row - 1, col, visited);
+    cleanCell(robot, row + 1, col, visited);
     moveUp(robot);
   }
 
   if (moveLeft(robot)) {
-    cleanCell(robot, row, col + 1, visited);
+    cleanCell(robot, row, col - 1, visited);
     moveRight(robot);
   }
 
   if (moveRight(robot)) {
-    cleanCell(robot, row, col - 1, visited);
+    cleanCell(robot, row, col + 1, visited);
     moveLeft(robot);
   }
 }

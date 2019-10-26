@@ -41,3 +41,7 @@
 - [Maximal Rectangle](src/problems/maximalRectangle/README.md)
 - [Largest Rectangle in Histogram](src/problems/largestRectangleinHistogram/README.md)
 - [Strobogrammatic Number II](src/problems/strobogrammaticNumberII/README.md)
+- [Robot Room Cleaner](src/problems/robotRoomCleaner/README.md)
+- [Campus Bikes](https://leetcode.com/problems/campus-bikes/)
+- [Guess the Word](src/problems/guessTheWord/README.md)
+- [Shortest Way to Form String](src/problems/shortestWayToFormString/README.md)
