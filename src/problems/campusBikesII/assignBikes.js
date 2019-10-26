@@ -12,9 +12,11 @@ var assignBikes = function(workers, bikes) {
 };
 
 function dfs(workers, bikes, dist, index, visited, minObj) {
-  if (dist >= minObj.min) return;
   if (index >= workers.length) {
     minObj.min = Math.min(minObj.min, dist);
+    return;
+  }
+  if (dist >= minObj.min) {
     return;
   }
   for (let i = 0; i < bikes.length; i++) {
