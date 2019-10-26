@@ -47,3 +47,4 @@
 - [Shortest Way to Form String](src/problems/shortestWayToFormString/README.md)
 - [Campus Bikes II](src/problems/campusBikesII/README.md)
 - [[String Transforms Into Another String]](src/problems/stringTransformsIntoAnotherString/README.md)
+- [Construct Binary Tree from Preorder and Postorder Traversal](src/problems/constructBinaryTreefromPreorderAndPostorderTraversal/README.md)
