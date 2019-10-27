@@ -11,14 +11,18 @@
  * @return {TreeNode}
  */
 var constructFromPrePost = function(pre, post) {
+  if (pre.length === 0) return null;
+
   const len = pre.length;
-  if (len === 0) return null;
   const root = new TreeNode(pre[0]);
-  if (len === 1) return root;
   let leftIndex = 0;
+
+  if (len === 1) return root;
+
   for (let i = 0; i < len; i++) {
     if (pre[1] === post[i]) leftIndex = i + 1;
   }
+
   const leftPre = pre.slice(1, leftIndex + 1);
   const leftPost = post.slice(0, leftIndex);
   const rightPre = pre.slice(leftIndex + 1, len);
