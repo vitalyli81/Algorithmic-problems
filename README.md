@@ -55,3 +55,4 @@
 - [Minimum Domino Rotations For Equal Row](src/problems/minimumDominoRotationsForEqualRow/README.md)
 - [Time Based Key-Value Store](src/problems/timeBasedKey-ValueStore/README.md)
 - [[Minimum Window Subsequence]](src/problems/minimumWindowSubsequence/README.md)
+- [Longest Absolute File Path](src/problems/longestAbsoluteFilePath/README.md)
