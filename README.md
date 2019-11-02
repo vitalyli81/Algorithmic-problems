@@ -50,3 +50,5 @@
 - [Construct Binary Tree from Preorder and Postorder Traversal](src/problems/constructBinaryTreefromPreorderAndPostorderTraversal/README.md)
 - [Median of Two Sorted Arrays](src/problems/medianOfTwoSortedArrays/README.md)
 - [Trapping Rain Water](src/problems/trappingRainWater/README.md)
+- [Design Search Autocomplete System](src/problems/designSearchAutocompleteSystem/README.md)
+  [Flatten a Multilevel Doubly Linked List](src/problems/flattenAMultilevelDoublyLinkedList/README.md)
