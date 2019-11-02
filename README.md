@@ -51,4 +51,5 @@
 - [Median of Two Sorted Arrays](src/problems/medianOfTwoSortedArrays/README.md)
 - [Trapping Rain Water](src/problems/trappingRainWater/README.md)
 - [Design Search Autocomplete System](src/problems/designSearchAutocompleteSystem/README.md)
-  [Flatten a Multilevel Doubly Linked List](src/problems/flattenAMultilevelDoublyLinkedList/README.md)
+- [Flatten a Multilevel Doubly Linked List](src/problems/flattenAMultilevelDoublyLinkedList/README.md)
+- [Minimum Domino Rotations For Equal Row](src/problems/minimumDominoRotationsForEqualRow/README.md)
