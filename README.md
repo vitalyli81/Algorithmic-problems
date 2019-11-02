@@ -53,3 +53,5 @@
 - [Design Search Autocomplete System](src/problems/designSearchAutocompleteSystem/README.md)
 - [Flatten a Multilevel Doubly Linked List](src/problems/flattenAMultilevelDoublyLinkedList/README.md)
 - [Minimum Domino Rotations For Equal Row](src/problems/minimumDominoRotationsForEqualRow/README.md)
+- [Time Based Key-Value Store](src/problems/timeBasedKey-ValueStore/README.md)
+- [[Minimum Window Subsequence]](src/problems/minimumWindowSubsequence/README.md)
