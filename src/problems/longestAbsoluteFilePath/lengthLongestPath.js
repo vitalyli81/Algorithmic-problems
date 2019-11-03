@@ -3,18 +3,17 @@ var lengthLongestPath = function(input) {
   const TAB_CHAR = '\t';
   const NEW_LINE_CHAR = '\n';
   const DOT_CHAR = '.';
-
   const paths = input.split(NEW_LINE_CHAR);
-  const hash = { 0: 0 };
+  const fsHash = { 0: 0 };
 
   paths.forEach(str => {
     const level = str.lastIndexOf(TAB_CHAR) + 1;
     const len = str.length - level;
 
     if (str.includes(DOT_CHAR)) {
-      result = Math.max(result, hash[level] + len);
+      result = Math.max(result, fsHash[level] + len);
     } else {
-      hash[level + 1] = hash[level] + len + 1;
+      fsHash[level + 1] = fsHash[level] + len + 1;
     }
   });
   return result;
