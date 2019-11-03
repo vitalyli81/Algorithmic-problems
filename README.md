@@ -11,6 +11,7 @@
 
 ## Problems:
 
+- [24 Game](src/problems/24Game/README.md)
 - [Campus Bikes](src/problems/campusBikes/README.md)
 - [Campus Bikes II](src/problems/campusBikesII/README.md)
 - [Count of Smaller Numbers After Self](src/problems/countofSmallerNumbersAfterSelf/README.md)
