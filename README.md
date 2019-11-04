@@ -51,6 +51,7 @@
 - [Range Sum Query 2D - Immutable](src/problems/rangeSumQuery2DImmutable/README.md)
 - [Stream of Characters](src/problems/streamOfCharacters/README.md)
 - [Split Array Largest Sum](src/problems/splitArrayLargestSum/README.md)
+- [Split Array into Consecutive Subsequences](src/problems/splitArrayintoConsecutiveSubsequences/README.md)
 - [Strobogrammatic Number II](src/problems/strobogrammaticNumberII/README.md)
 - [Shortest Way to Form String](src/problems/shortestWayToFormString/README.md)
 - [String Transforms Into Another String](src/problems/stringTransformsIntoAnotherString/README.md)
