@@ -1,6 +1,6 @@
 import { URLify } from '../solution1';
 
-describe('test isUnique functionality', () => {
+describe('test URLify functionality', () => {
   const valid = [
     {
       s: 'Mr John Smith    ',

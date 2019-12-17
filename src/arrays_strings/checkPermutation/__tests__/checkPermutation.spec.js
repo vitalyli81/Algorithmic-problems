@@ -1,7 +1,7 @@
 import { checkPermuation1 } from '../solution1';
 import { checkPermuation2 } from '../solution2';
 
-describe('test isUnique functionality', () => {
+describe('test checkPermuation functionality', () => {
   const valid = [
     {
       s1: 'abc',
