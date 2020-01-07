@@ -29,6 +29,10 @@ export class Queue {
 
     return elem;
   }
+
+  peek() {
+    return this.data[this.head + 1];
+  }
 }
 
 export default Queue;
