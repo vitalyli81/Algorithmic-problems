@@ -11,8 +11,11 @@
  */
 var isBalanced = function(root) {
   if (root === null) return true;
-  const heightDiff = Math.abs(getHeight(root.left) - getHeight(root.right));
-  return heightDiff < 2 && isBalanced(root.left) && isBalanced(root.right);
+  return (
+    isBalanced(root.left) &&
+    isBalanced(root.right) &&
+    Math.abs(getHeight(root.left) - getHeight(root.right)) < 2
+  );
 };
 
 function getHeight(node) {
