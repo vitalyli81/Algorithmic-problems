@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var wiggleSort = function(nums) {
+var peaksAndValeys = function(nums) {
   for (let i = 1; i < nums.length; i += 2) {
     const maxInd = maxIndex(nums, i - 1, i, i + 1);
     if (i !== maxInd) {
