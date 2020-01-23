@@ -5,19 +5,15 @@
  */
 const uniquePaths = (m, n) => {
   if (!m || !n) return 0;
-  const memo = {};
-  return getPaths(0, 0, n, m, memo);
+  return getPaths(0, 0, n, m);
 };
 
-const getPaths = (row, col, rows, cols, memo) => {
+const getPaths = (row, col, rows, cols) => {
   if (!isValidSquare(row, col, rows, cols)) return 0;
-  const key = `${row}-${col}`;
-  if (memo[key]) return memo[key];
-  if (isAtTarget(row, col, rows, cols)) return (memo[key] = 1);
-
-  return (memo[key] =
-    getPaths(row + 1, col, rows, cols, memo) +
-    getPaths(row, col + 1, rows, cols, memo));
+  if (isAtTarget(row, col, rows, cols)) return 1;
+  return (
+    getPaths(row + 1, col, rows, cols) + getPaths(row, col + 1, rows, cols)
+  );
 };
 
 const isValidSquare = (row, col, rows, cols) => {
