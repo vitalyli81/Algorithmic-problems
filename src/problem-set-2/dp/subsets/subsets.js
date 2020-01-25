@@ -2,15 +2,25 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var subsets = function(nums) {
-  const result = [];
-  dfs([], 0, result, nums);
-  return result;
+const subsets = nums => {
+  const resultSets = [];
+  dfs({
+    currentSet: [],
+    nextIndex: 0,
+    resultSets,
+    nums
+  });
+  return resultSets;
 };
 
-const dfs = (currentSet, nextInd, result, nums) => {
-  result.push(currentSet);
-  for (let i = nextInd; i < nums.length; i++) {
-    dfs([...currentSet, nums[i]], i + 1, result, nums);
+const dfs = ({ currentSet, nextIndex, resultSets, nums }) => {
+  resultSets.push(currentSet);
+  for (let i = nextIndex; i < nums.length; i++) {
+    dfs({
+      currentSet: [...currentSet, nums[i]],
+      nextIndex: i + 1,
+      resultSets,
+      nums
+    });
   }
 };
