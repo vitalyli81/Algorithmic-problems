@@ -13,18 +13,11 @@ const permute = nums => {
   const first = nums[0];
   const remainder = nums.slice(1);
   const prevPerms = permute(remainder);
-  prevPerms.forEach(prevPerm => {
-    for (let i = 0; i <= prevPerm.length; i++) {
-      permutations.push(insertAt(prevPerm, first, i));
+  prevPerms.forEach(prev => {
+    for (let i = 0; i <= prev.length; i++) {
+      permutations.push([...prev.slice(0, i), first, ...prev.slice(i)]);
     }
   });
 
   return permutations;
-};
-
-const insertAt = (nums, val, index) => {
-  const start = nums.slice(0, index);
-  start.push(val);
-  const end = nums.slice(index);
-  return [...start, ...end];
 };
