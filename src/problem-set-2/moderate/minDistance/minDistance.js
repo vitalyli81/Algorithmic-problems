@@ -16,9 +16,11 @@ const helper = (word1, word2, i, j, memo) => {
   if (word1.length === i) {
     return word2.length - j;
   }
+
   if (word2.length === j) {
     return word1.length - i;
   }
+
   const key = `${i}-${j}`;
 
   if (memo[key] >= 0) return memo[key];
