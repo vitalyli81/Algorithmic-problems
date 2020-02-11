@@ -1,5 +1,5 @@
 const LESS_THAN_20 = [
-  '',
+  'Zero',
   'One',
   'Two',
   'Three',
@@ -36,34 +36,35 @@ const THOUSANDS = ['', 'Thousand', 'Million', 'Billion'];
 
 const numberToWords = num => {
   if (num === 0) {
-    return 'Zero';
+    return LESS_THAN_20[0];
   }
 
-  let thousandCounter = 0;
+  let chunkCount = 0;
   let result = '';
 
   while (num > 0) {
     if (num % 1000 !== 0) {
-      result =
-        numToString(num % 1000) + THOUSANDS[thousandCounter] + ' ' + result;
+      result = convertChunk(num % 1000) + THOUSANDS[chunkCount] + ' ' + result;
     }
     num = Math.trunc(num / 1000);
-    thousandCounter++;
+    chunkCount++;
   }
 
   return result.trim();
 };
 
-const numToString = num => {
+const convertChunk = num => {
   if (num === 0) {
     return '';
   } else if (num < 20) {
     return LESS_THAN_20[num] + ' ';
   } else if (num < 100) {
-    return TENS[Math.trunc(num / 10)] + ' ' + numToString(num % 10);
+    return TENS[Math.trunc(num / 10)] + ' ' + convertChunk(num % 10);
   } else {
     return (
-      LESS_THAN_20[Math.trunc(num / 100)] + ' Hundred ' + numToString(num % 100)
+      LESS_THAN_20[Math.trunc(num / 100)] +
+      ' Hundred ' +
+      convertChunk(num % 100)
     );
   }
 };
