@@ -13,14 +13,12 @@ var wordPattern = function(pattern, str) {
   for (let i = 0; i < len; i++) {
     const patternVal = pattern[i];
     const strVal = strArray[i];
-    if (
-      (hashPat[patternVal] !== undefined && hashPat[patternVal] !== strVal) ||
-      (hashStr[strVal] !== undefined && hashStr[strVal] !== patternVal)
-    ) {
+    if (!hashPat[patternVal] && !hashStr[strVal]) {
+      hashPat[patternVal] = strVal;
+      hashStr[strVal] = patternVal;
+    } else if (hashPat[patternVal] !== strVal) {
       return false;
     }
-    hashPat[patternVal] = strVal;
-    hashStr[strVal] = patternVal;
   }
   return true;
 };
