@@ -19,7 +19,7 @@ var findSecondMinimumValue = function(root) {
     if (next.val !== min1 && next.val !== min2) {
       if (next.val < min1) {
         [min1, min2] = [next.val, min1];
-      } else if (next.val > min2) {
+      } else if (next.val < min2) {
         min2 = next.val;
       }
     }
