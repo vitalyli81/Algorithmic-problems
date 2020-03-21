@@ -16,7 +16,6 @@ const dp = (i, j, s, p, memo) => {
     ans = i === s.length;
   } else {
     const firstMatch = i < s.length && (p[j] === s[i] || p[j] === '.');
-
     if (j + 1 < p.length && p[j + 1] === '*') {
       ans =
         dp(i, j + 2, s, p, memo) || (firstMatch && dp(i + 1, j, s, p, memo));
@@ -24,6 +23,7 @@ const dp = (i, j, s, p, memo) => {
       ans = firstMatch && dp(i + 1, j + 1, s, p, memo);
     }
   }
+
   memo[key] = ans;
   return ans;
 };
