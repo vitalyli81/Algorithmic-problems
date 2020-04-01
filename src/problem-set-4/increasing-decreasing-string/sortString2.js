@@ -3,22 +3,6 @@
  * @return {string}
  */
 
-const deleteNode = node => {
-  const prev = node.prev;
-  const next = node.next;
-  next.prev = prev;
-  prev.next = next;
-};
-
-const addNode = (node, val) => {
-  const newNode = new Node(val);
-  const next = node.next;
-  node.next = newNode;
-  newNode.prev = node;
-  newNode.next = next;
-  next.prev = newNode;
-};
-
 class Node {
   constructor(val) {
     this.val = val;
@@ -27,14 +11,46 @@ class Node {
   }
 }
 
+class DoubleLinkedList {
+  constructor() {
+    this.head = {};
+    this.tail = {};
+    this.head.next = this.tail;
+    this.tail.prev = this.head;
+  }
+
+  insertNode(val) {
+    const newNode = new Node(val);
+    const next = this.head.next;
+    this.head.next = newNode;
+    newNode.prev = this.head;
+    newNode.next = next;
+    next.prev = newNode;
+  }
+
+  deleteNode(node) {
+    const prev = node.prev;
+    const next = node.next;
+    next.prev = prev;
+    prev.next = next;
+  }
+
+  getHead() {
+    return this.head;
+  }
+
+  getTail() {
+    return this.tail;
+  }
+}
+
 var sortString = function(s) {
   const CHAR_DIFF = 97;
   const hash = Array(26).fill(0);
   let res = '';
-  const head = {};
-  const tail = {};
-  head.next = tail;
-  tail.prev = head;
+  const list = new DoubleLinkedList();
+  const head = list.getHead();
+  const tail = list.getTail();
 
   for (let c of s) {
     const code = c.charCodeAt() - CHAR_DIFF;
@@ -43,7 +59,7 @@ var sortString = function(s) {
 
   for (let i = hash.length - 1; i >= 0; i--) {
     if (hash[i]) {
-      addNode(head, i);
+      list.insertNode(i);
     }
   }
 
@@ -55,7 +71,7 @@ var sortString = function(s) {
       }
       hash[cur.val]--;
       if (hash[cur.val] <= 0) {
-        deleteNode(cur);
+        list.deleteNode(cur);
       }
       cur = cur.next;
     }
@@ -67,7 +83,7 @@ var sortString = function(s) {
       }
       hash[cur.val]--;
       if (hash[cur.val] <= 0) {
-        deleteNode(cur);
+        list.deleteNode(cur);
       }
       cur = cur.prev;
     }
