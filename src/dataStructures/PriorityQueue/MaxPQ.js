@@ -25,7 +25,7 @@ export class MaxPriorityQueue {
   heapIncrease(ind, key) {
     if (this.heapSize < 1) return;
 
-    let parent = Math.floor(i / 2); // parent index
+    let parent = Math.floor(ind / 2); // parent index
     let index = ind;
 
     if (key < this.A[index]) return;
