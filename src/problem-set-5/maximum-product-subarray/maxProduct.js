@@ -8,12 +8,10 @@ var maxProduct = function (nums) {
   let max = nums[0];
 
   for (let i = 1; i < nums.length; i++) {
-    const curEl = nums[i];
-    const curMax = Math.max(prevMax * curEl, curEl, prevMin * curEl);
-    const curMin = Math.min(prevMax * curEl, curEl, prevMin * curEl);
-
-    prevMax = Math.max(curMax, curMin);
-    prevMin = Math.min(curMax, curMin);
+    const curMax = Math.max(prevMax * nums[i], nums[i], prevMin * nums[i]);
+    const curMin = Math.min(prevMax * nums[i], nums[i], prevMin * nums[i]);
+    prevMax = curMax;
+    prevMin = curMin;
     max = Math.max(prevMax, max);
   }
   return max;
