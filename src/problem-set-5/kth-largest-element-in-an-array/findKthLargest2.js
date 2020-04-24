@@ -27,7 +27,7 @@ function randomizedSelect(nums, start, end, k) {
 }
 
 function randomizedPartition(nums, start, end) {
-  let rand = Math.floor(Math.random() * (end - start + 1)) + start;
+  const rand = Math.floor(Math.random() * (end - start + 1)) + start;
   swap(nums, rand, end);
 
   return partition(nums, start, end);
