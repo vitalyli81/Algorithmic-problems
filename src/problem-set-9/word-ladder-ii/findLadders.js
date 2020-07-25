@@ -20,26 +20,29 @@ const bfs = (beginWord, endWord, graph) => {
 
   while (front.length) {
     const next = [];
-    let found = false;
+
     for (let cur of front) {
       const level = distance[cur];
+
       for (let i = 0; i < cur.length; i++) {
         const newWord = cur.substring(0, i) + '*' + cur.substring(i + 1);
         const adj = graph[newWord];
+
         if (adj) {
           for (let adjW of adj) {
-            if (adjW === endWord) {
-              found = true;
-            }
             if (!distance[adjW]) {
               next.push(adjW);
               distance[adjW] = level + 1;
             }
+
+            if (adjW === endWord) {
+              return distance;
+            }
           }
         }
       }
-      if (found) break;
     }
+
     front = next;
   }
 
